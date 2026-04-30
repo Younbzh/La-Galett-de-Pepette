@@ -1,15 +1,20 @@
 :root {
-  --club-bg: #050509;
-  --club-bg-elevated: #0b0c12;
-  --club-accent: #facc15;
-  --club-accent-soft: rgba(250, 204, 21, 0.18);
-  --club-border-subtle: rgba(148, 163, 184, 0.35);
-  --club-text-main: #f9fafb;
-  --club-text-muted: #9ca3af;
+  /* Palette calée sur le camion noir & typographie jaune dorée */
+  --p-bg:            #faf8f2;           /* crème lin – sections claires */
+  --p-dark:          #0f0f0d;           /* noir du camion */
+  --p-dark-2:        #1a1917;           /* noir légèrement réchauffé */
+  --p-accent:        #f2c932;           /* jaune doré du lettrage */
+  --p-accent-soft:   rgba(242,201,50,.14);
+  --p-accent-border: rgba(242,201,50,.28);
+  --p-text-dark:     #1e1a14;           /* texte sur fond clair */
+  --p-text-cream:    #f5ede0;           /* texte sur fond sombre */
+  --p-text-muted:    #9a8a72;           /* secondaire sur fond sombre */
+  --p-text-body:     #3d2e1e;           /* corps de texte sur fond clair */
+  --p-sand:          #f0e6cf;           /* sable – accents doux */
 }
 
 body {
-  background-color: var(--club-bg);
-  color: var(--club-text-main);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  background-color: var(--p-bg);
+  color: var(--p-text-dark);
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
 }

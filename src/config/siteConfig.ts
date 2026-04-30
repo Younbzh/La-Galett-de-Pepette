@@ -1,70 +1,85 @@
 export const siteConfig = {
-  name: "Tizh Breizh",
-  tagline: "Galettes & Crêpes artisanales · Produits locaux",
-  description: "Food truck artisanal de crêpes et galettes aux produits locaux, sillonnant les communes autour de Redon en Loire-Atlantique et Ille-et-Vilaine.",
+  name: "La Galett' de Pépette",
+  tagline: "Crêpes & Galettes faites maison · Produits locaux",
+  description:
+    "Food truck artisanal de crêpes et galettes aux produits locaux, sillonnant les communes du pays de Vitré (Ille-et-Vilaine).",
 
   contact: {
-    phone: "06 04 48 17 25",
-    email: "tizh-breizh@outlook.fr",
-    facebook: "https://www.facebook.com/people/Tizh-Breizh/61581677872594/",
+    phone: "06 21 61 77 94",
   },
 
   founder: {
-    name: "Florian Bodin",
-    origin: "Sainte-Marie (44)",
-    previousJob: "Mécanicien de précision chez BIC, Redon – 4 ans",
-    training: "Atelier de la crêpe, Saint-Malo – CQP (Certificat de Qualification Professionnelle)",
-    quote: "Ma belle-famille avait l'habitude de cuisiner des galettes et des crêpes. J'ai eu envie d'apprendre.",
-    launch: "Lancement en octobre 2025",
+    name: "Audrey Renou",
+    nickname: "Pépette",
+    origin: "Broons-sur-Vilaine (35)",
+    previousJob: "Aide-soignante – 15 ans",
+    training: "École de maître crêpier, Rennes",
+    quote: "Je trouve que Pépette sonne bien avec galette.",
+    story: [
+      "Aide-soignante pendant quinze ans, Audrey Renou a toujours rêvé de routes et de liberté. Un bilan de compétences lui révèle ce qu'elle savait au fond : elle peut se lancer. Elle suit alors une formation à l'École de maître crêpier de Rennes et acquiert le tour de main pour étaler la pâte.",
+      "Son surnom depuis le collège, « Pépette », devient le nom de son food truck. Un camion d'occasion, une pâte 100 % maison, des producteurs du coin : La Galett' de Pépette prend la route dans le pays de Vitré.",
+    ],
   },
-
-  formule: {
-    name: "Formule Breizh",
-    price: "10€",
-    includes: ["1 Galette", "1 Crêpe", "1 Boisson"],
-  },
-
-  schedule: [
-    { day: "Mardi",   time: "Soir",          location: "Avessac",                   dept: "44" },
-    { day: "Mercredi",time: "Journée",        location: "Renac",                     dept: "35" },
-    { day: "Jeudi",   time: "17h30 – 21h00", location: "Massérac · Sous les halles", dept: "44" },
-    { day: "Vendredi",time: "Midi",           location: "Redon · Paul & Joseph",     dept: "35" },
-    { day: "Vendredi",time: "Soir",           location: "Sainte-Marie",              dept: "44" },
-    { day: "Samedi",  time: "Midi & Soir",    location: "Redon",                     dept: "35" },
-  ],
 
   mascotte: {
-    name: "Loka",
     description:
-      "Bonjour à tous, moi je m'appelle Loka et de temps en temps j'ai le droit de déguster de bonnes crêpes et galettes ! N'hésitez pas à passer chez Tizh Breizh, vous aurez peut-être l'occasion de me croiser.",
+      "Sur le flanc noir du camion, une petite fille en costume breton brandit fièrement le drapeau de Bretagne. C'est le visage de La Galett' de Pépette — le sourire qui vous accueille à chaque arrêt.",
   },
+
+  menu: {
+    galettes: [
+      { name: "Complète", description: "Jambon, œuf, emmental" },
+      { name: "Saucisse", description: "Saucisse locale · Les Délices du cochon" },
+      { name: "Tomates séchées", description: "La proposition du moment" },
+      { name: "À la carte", description: "Garnitures variables selon la saison" },
+    ],
+    crepes: [
+      { name: "Beurre sucre", description: "La classique, intemporelle" },
+      { name: "Confiture", description: "Locale et généreuse" },
+      { name: "Wraps froids", description: "Disponibles en été" },
+    ],
+    note: "La carte évolue au fil des saisons et des arrivages des producteurs.",
+  },
+
+  sourcing: [
+    { product: "Œufs & jus de pommes", origin: "Ferme bio de Mitan Cranne" },
+    { product: "Farine de blé noir",   origin: "Acigné (farine française)" },
+    { product: "Saucisses",            origin: "Les Délices du cochon, Broons" },
+  ],
+
+  schedule: [
+    { day: "Mardi",    time: "11h30 – 14h",  location: "Noyal-sur-Vilaine",  detail: "Parking Hexatel" },
+    { day: "Mercredi", time: "16h – 19h30",  location: "Broons-sur-Vilaine", detail: "Parking salle du Verger" },
+    { day: "Jeudi",    time: "Midi",         location: "Torcé",              detail: "Près de Vandemoortele" },
+    { day: "Vendredi", time: "16h – 20h",   location: "Étrelles",           detail: "Marché" },
+  ],
 
   values: [
     {
-      title: "Produits locaux",
-      description: "Florian sélectionne ses ingrédients chez des producteurs de la région.",
-      icon: "leaf",
-    },
-    {
-      title: "Savoir-faire certifié",
-      description: "Formé à l'Atelier de la crêpe de Saint-Malo, CQP en poche.",
+      title: "100 % maison",
+      description: "Chaque galette et crêpe est préparée sur place, à la minute, avec soin.",
       icon: "star",
     },
     {
-      title: "Convivialité",
-      description: "Un food truck chaleureux, une ambiance simple et authentique.",
+      title: "Produits locaux",
+      description: "Audrey s'approvisionne directement chez des producteurs du pays de Vitré.",
+      icon: "leaf",
+    },
+    {
+      title: "De saison",
+      description: "La carte change au fil de l'année pour suivre les arrivages et les saveurs du moment.",
       icon: "heart",
     },
     {
-      title: "Recettes maîtrisées",
-      description: "Des galettes et crêpes préparées avec soin, chaque semaine.",
+      title: "Maître crêpier",
+      description: "Formée à l'École de maître crêpier de Rennes, Audrey maîtrise la pâte et le geste.",
       icon: "check",
     },
   ],
 
   seo: {
-    title: "Tizh Breizh | Food Truck Crêpes & Galettes – Redon, Loire-Atlantique",
+    title: "La Galett' de Pépette | Food Truck Crêpes & Galettes – Pays de Vitré",
     description:
-      "Food truck Tizh Breizh : galettes et crêpes artisanales aux produits locaux autour de Redon. Formule Breizh à 10€. Florian Bodin, crêpier certifié.",
+      "Food truck La Galett' de Pépette : crêpes et galettes faites maison aux produits locaux. Audrey Renou, maître crêpier. Noyal-sur-Vilaine, Broons-sur-Vilaine, Torcé, Étrelles.",
   },
 };
